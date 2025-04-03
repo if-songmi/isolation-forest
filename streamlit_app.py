@@ -22,7 +22,7 @@ clf=IsolationForest(n_estimators=50, max_samples=50, contamination=float(0.1),
 
 st.markdown('<p style="padding-top:100px"></p>', unsafe_allow_html=True)
 st.markdown('#### 2. sklearn에서 제공하는 Isolation Forest로 정상치, 이상치 구분')
-st.markdown('(오염물질 구분없이 타임+위경도+전체오염도를 기준으로 이상치 탐색)')
+st.markdown('(오염물질 구분없이 전체오염도를 기준으로 이상치 탐색)')
 
 code = '''
 from sklearn.ensemble import IsolationForest
